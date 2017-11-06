@@ -44,6 +44,7 @@ class PagesController < ApplicationController
   end
 
   def guess
+    @start_time = Time.now
     alphabet = ("a".."z").to_a
     generated_grid = []
     10.times do
